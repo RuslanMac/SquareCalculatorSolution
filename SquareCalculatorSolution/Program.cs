@@ -7,6 +7,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
+var config = builder.Configuration;
+builder.Services.AddOptions<SequenceOptions>()
+    .Bind(config.GetSection(SequenceOptions.SectionName))
+    .Validate(x =>
+    {
+        if (x.MinValue > x.MaxValue)
+            return false;
+        if (x.MaxNumber is < 0 or > int.MaxValue)
+            return false;
+        return true;
+    })
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
