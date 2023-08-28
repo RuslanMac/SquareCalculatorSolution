@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareCalculatorSolution.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareCalculatorSolution.Domain", "SquareCalculatorSolution.Domain\SquareCalculatorSolution.Domain.csproj", "{413D42B9-4831-487E-83D7-917075317514}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsProject", "TestsProject\TestsProject.csproj", "{55EA2878-BEB0-4967-BD51-CA3E9679A63A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{413D42B9-4831-487E-83D7-917075317514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{413D42B9-4831-487E-83D7-917075317514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{413D42B9-4831-487E-83D7-917075317514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55EA2878-BEB0-4967-BD51-CA3E9679A63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55EA2878-BEB0-4967-BD51-CA3E9679A63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55EA2878-BEB0-4967-BD51-CA3E9679A63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55EA2878-BEB0-4967-BD51-CA3E9679A63A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

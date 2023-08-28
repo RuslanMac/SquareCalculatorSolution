@@ -12,7 +12,7 @@ namespace SquareCalculatorSolution.Application.CalculatorService
 {
     public class CalculatorService : ICalculatorService
     {
-        public double Sum {get ; set;}
+        public double Sum { get; set; }
         private readonly SequenceDtoValidator _validator;
         public CalculatorService(SequenceDtoValidator validator)
         {
@@ -25,13 +25,14 @@ namespace SquareCalculatorSolution.Application.CalculatorService
             {
                 throw new ArgumentException();
             }
-                
+
             checked
             {
                 try
                 {
                     foreach (var number in sequence.Numbers)
                     {
+
                         Sum += Math.Pow(number, 2);
                     };
                     return Sum;
