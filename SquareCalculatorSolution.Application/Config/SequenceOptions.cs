@@ -7,6 +7,7 @@ public class SequenceOptions
     public double MaxValue { get; set; }
     [Range(double.MinValue, double.MaxValue)]
     public double MinValue { get; set; }
+    [Range(0, int.MaxValue)]
     public int MaxNumber { get; set; }
 
 }
